@@ -42,8 +42,8 @@ input, textarea, select { font-family: inherit; }
 }
 
 /* Section spacing */
-.section { padding: var(--space-24) 0; position: relative; }
-.section-lg { padding: var(--space-32) 0; position: relative; }
+.section { padding: var(--space-20) 0; position: relative; }
+.section-lg { padding: var(--space-24) 0; position: relative; }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {

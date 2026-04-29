@@ -61,6 +61,7 @@
 
 <!-- HERO -->
 <section class="hero" id="hero">
+  <canvas class="particles-canvas" id="particles"></canvas>
   <div class="hero-bg">
     <img src="assets/images/hero-bg.png" alt="" loading="eager">
     <div class="hero-bg-overlay"></div>
@@ -79,9 +80,9 @@
         <a href="#products" class="btn btn-secondary btn-lg">Explore Products</a>
       </div>
       <div class="hero-stats">
-        <div><div class="hero-stat-value" data-count="15">15+</div><div class="hero-stat-label">Institutions Served</div></div>
-        <div><div class="hero-stat-value">99.9%</div><div class="hero-stat-label">Uptime SLA</div></div>
-        <div><div class="hero-stat-value">50M+</div><div class="hero-stat-label">Orders Processed</div></div>
+        <div><div class="hero-stat-value" data-count="15" data-suffix="+">0</div><div class="hero-stat-label">Institutions Served</div></div>
+        <div><div class="hero-stat-value" data-count="99.9" data-suffix="%">0</div><div class="hero-stat-label">Uptime SLA</div></div>
+        <div><div class="hero-stat-value" data-count="50" data-suffix="M+">0</div><div class="hero-stat-label">Orders Processed</div></div>
       </div>
     </div>
     <div class="hero-visual">
@@ -106,15 +107,25 @@
 <section class="trust-bar animate-in">
   <div class="container">
     <div class="trust-bar-label">Trusted by leading financial institutions</div>
-    <div class="trust-logos">
-      <div class="trust-logo">UFTCL</div>
-      <div class="trust-logo">PBSL</div>
-      <div class="trust-logo">Royal Capital</div>
-      <div class="trust-logo">Smart Share</div>
-      <div class="trust-logo">Island Securities</div>
-      <div class="trust-logo">NRBC Bank</div>
-      <div class="trust-logo">SBAC Bank</div>
-      <div class="trust-logo">IIDFC Securities</div>
+    <div style="overflow:hidden;">
+      <div class="trust-logos-track">
+        <div class="trust-logo">UFTCL</div>
+        <div class="trust-logo">PBSL</div>
+        <div class="trust-logo">Royal Capital</div>
+        <div class="trust-logo">Smart Share</div>
+        <div class="trust-logo">Island Securities</div>
+        <div class="trust-logo">NRBC Bank</div>
+        <div class="trust-logo">SBAC Bank</div>
+        <div class="trust-logo">IIDFC Securities</div>
+        <div class="trust-logo">UFTCL</div>
+        <div class="trust-logo">PBSL</div>
+        <div class="trust-logo">Royal Capital</div>
+        <div class="trust-logo">Smart Share</div>
+        <div class="trust-logo">Island Securities</div>
+        <div class="trust-logo">NRBC Bank</div>
+        <div class="trust-logo">SBAC Bank</div>
+        <div class="trust-logo">IIDFC Securities</div>
+      </div>
     </div>
   </div>
 </section>
@@ -168,6 +179,8 @@
   </div>
 </section>
 
+<div class="section-divider"></div>
+
 <!-- FEATURES -->
 <section class="section bg-radial-center" id="features">
   <div class="container">
@@ -201,6 +214,8 @@
     </div>
   </div>
 </section>
+
+<div class="section-divider"></div>
 
 <!-- SOLUTIONS -->
 <section class="section bg-grid" id="solutions">
@@ -248,6 +263,8 @@
   </div>
 </section>
 
+<div class="section-divider"></div>
+
 <!-- TECHNOLOGY -->
 <section class="section bg-radial-top" id="technology">
   <div class="container">
@@ -280,6 +297,8 @@
     </div>
   </div>
 </section>
+
+<div class="section-divider"></div>
 
 <!-- CASE STUDIES -->
 <section class="section bg-grid" id="case-studies">
