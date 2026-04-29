@@ -43,7 +43,6 @@ function initMobileMenu() {
 // Scroll-triggered animations with proper staggering
 function initScrollAnimations() {
   const observer = new IntersectionObserver((entries) => {
-    // Group entries by their parent container for proper staggering
     const visibleEntries = entries.filter(e => e.isIntersecting);
     visibleEntries.forEach((entry, i) => {
       const delay = i * 100;
@@ -54,7 +53,7 @@ function initScrollAnimations() {
     });
   }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
 
-  document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
+  document.querySelectorAll('.animate-in, .animate-in-left, .animate-in-right, .animate-in-scale').forEach(el => observer.observe(el));
 }
 
 // Mini chart in hero float card
