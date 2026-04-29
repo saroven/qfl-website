@@ -21,17 +21,22 @@ function initNavbar() {
   }, { passive: true });
 }
 
-// Mobile menu
+// Mobile Menu Toggle
 function initMobileMenu() {
   const toggle = document.getElementById('mobileToggle');
   const menu = document.getElementById('mobileMenu');
+  const links = document.querySelectorAll('.mobile-menu .nav-link');
+  
   if (!toggle || !menu) return;
+  
   toggle.addEventListener('click', () => {
     toggle.classList.toggle('active');
     menu.classList.toggle('active');
     document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
   });
-  menu.querySelectorAll('.nav-link, .btn').forEach(link => {
+
+  // Close menu when a link is clicked
+  links.forEach(link => {
     link.addEventListener('click', () => {
       toggle.classList.remove('active');
       menu.classList.remove('active');

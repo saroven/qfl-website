@@ -98,8 +98,8 @@
 .mobile-menu .btn { width: 100%; justify-content: center; margin-top: var(--space-4); }
 
 @media (max-width: 1024px) {
-  .nav-links, .nav-actions { display: none; }
-  .nav-mobile-toggle { display: flex; }
+  .nav-links, .nav-actions { display: none !important; }
+  .nav-mobile-toggle { display: flex !important; }
 }
 
 /* ===== HERO ===== */
@@ -188,6 +188,32 @@
   .hero-stats { gap: var(--space-6); }
 }
 
+/* Scroll Indicator */
+.hero-scroll {
+  position: absolute; bottom: var(--space-8); left: 50%;
+  transform: translateX(-50%); display: flex; flex-direction: column;
+  align-items: center; gap: var(--space-2); color: var(--color-text-tertiary);
+  font-size: var(--text-xs); letter-spacing: 0.1em; text-transform: uppercase;
+}
+.scroll-mouse {
+  width: 24px; height: 38px; border: 2px solid var(--color-border);
+  border-radius: 12px; position: relative;
+}
+.scroll-dot {
+  width: 4px; height: 8px; background: var(--color-accent-cyan);
+  border-radius: 2px; position: absolute; top: 8px; left: 50%;
+  transform: translateX(-50%); animation: scroll-dot-move 2s ease-in-out infinite;
+}
+@keyframes scroll-dot-move {
+  0% { transform: translateX(-50%) translateY(0); opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateX(-50%) translateY(12px); opacity: 0; }
+}
+@media (max-width: 768px) { 
+  .hero-scroll { bottom: var(--space-4); transform: translateX(-50%) scale(0.7); } 
+}
+
 /* ===== TRUST BAR ===== */
 .trust-bar {
   padding: var(--space-10) 0;
@@ -252,8 +278,14 @@
 }
 .product-card:hover .product-card-link { gap: var(--space-3); }
 
-@media (max-width: 1024px) { .products-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 640px) { .products-grid { grid-template-columns: 1fr; } }
+@media (max-width: 1024px) { 
+  .products-grid { grid-template-columns: repeat(2, 1fr); } 
+}
+@media (max-width: 768px) { 
+  .products-grid { grid-template-columns: 1fr; gap: var(--space-4); } 
+  .trust-logos-track { gap: var(--space-8); }
+  .trust-logo { font-size: var(--text-base); padding: var(--space-2) var(--space-4); }
+}
 
 /* ===== FEATURES ===== */
 .features-layout {
@@ -320,7 +352,7 @@
   border-color: rgba(0,212,170,0.2); color: var(--color-accent-cyan);
 }
 
-@media (max-width: 768px) { .solutions-grid { grid-template-columns: 1fr; } }
+@media (max-width: 991px) { .solutions-grid { grid-template-columns: 1fr; } }
 
 /* ===== TECH STACK ===== */
 .tech-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-6); }
