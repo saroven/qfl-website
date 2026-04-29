@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quant Fintech — Enterprise Trading Infrastructure & Financial Technology</title>
+  <meta name="description" content="Quant Fintech delivers institutional-grade OMS, trading platforms, CRM, and back-office solutions for brokers, banks, and financial institutions worldwide.">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2300D4AA'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-size='18' font-weight='800' fill='%23060810'>Q</text></svg>">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#" class="nav-logo">
+      <div class="nav-logo-icon">Q</div>
+      Quant<span>Fintech</span>
+    </a>
+    <div class="nav-links">
+      <a href="#" class="nav-link active">Home</a>
+      <div class="nav-dropdown">
+        <a href="#products" class="nav-link nav-dropdown-toggle">Products</a>
+        <div class="nav-dropdown-menu">
+          <a href="#" class="nav-dropdown-item"><div class="nav-dropdown-icon">📊</div><div><strong>qTrader OMS</strong><br><small style="color:var(--color-text-tertiary)">Order Management</small></div></a>
+          <a href="#" class="nav-dropdown-item"><div class="nav-dropdown-icon">🔄</div><div><strong>OCS Platform</strong><br><small style="color:var(--color-text-tertiary)">OEMF Trading</small></div></a>
+          <a href="#" class="nav-dropdown-item"><div class="nav-dropdown-icon">👥</div><div><strong>qWeb CRM</strong><br><small style="color:var(--color-text-tertiary)">Client Management</small></div></a>
+          <a href="#" class="nav-dropdown-item"><div class="nav-dropdown-icon">🏢</div><div><strong>qOffice</strong><br><small style="color:var(--color-text-tertiary)">Back Office</small></div></a>
+          <a href="#" class="nav-dropdown-item"><div class="nav-dropdown-icon">🛡️</div><div><strong>qRMS</strong><br><small style="color:var(--color-text-tertiary)">Risk Management</small></div></a>
+          <a href="#" class="nav-dropdown-item"><div class="nav-dropdown-icon">👤</div><div><strong>qHR</strong><br><small style="color:var(--color-text-tertiary)">HR Solutions</small></div></a>
+        </div>
+      </div>
+      <a href="#solutions" class="nav-link">Solutions</a>
+      <a href="#technology" class="nav-link">Technology</a>
+      <a href="#case-studies" class="nav-link">Case Studies</a>
+      <a href="#" class="nav-link">About</a>
+    </div>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-secondary">Contact</a>
+      <a href="#demo" class="btn btn-primary">Request Demo <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"/></svg></a>
+    </div>
+    <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#" class="nav-link">Home</a>
+  <a href="#products" class="nav-link">Products</a>
+  <a href="#solutions" class="nav-link">Solutions</a>
+  <a href="#technology" class="nav-link">Technology</a>
+  <a href="#case-studies" class="nav-link">Case Studies</a>
+  <a href="#" class="nav-link">About</a>
+  <a href="#contact" class="btn btn-secondary btn-lg">Contact Us</a>
+  <a href="#demo" class="btn btn-primary btn-lg">Request Demo</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="assets/images/hero-bg.png" alt="" loading="eager">
+    <div class="hero-bg-overlay"></div>
+  </div>
+  <div class="hero-glow hero-glow-1"></div>
+  <div class="hero-glow hero-glow-2"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge"><span class="badge-dot"></span> FIX & ITCH Certified Platform</span>
+      </div>
+      <h1>The Trading Infrastructure <span class="text-gradient">That Moves Markets</span></h1>
+      <p class="hero-subtitle">Enterprise-grade OMS, real-time trading platforms, and complete brokerage operations suite — trusted by leading financial institutions.</p>
+      <div class="hero-actions">
+        <a href="#demo" class="btn btn-primary btn-lg">Request a Demo <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"/></svg></a>
+        <a href="#products" class="btn btn-secondary btn-lg">Explore Products</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="hero-stat-value" data-count="15">15+</div><div class="hero-stat-label">Institutions Served</div></div>
+        <div><div class="hero-stat-value">99.9%</div><div class="hero-stat-label">Uptime SLA</div></div>
+        <div><div class="hero-stat-value">50M+</div><div class="hero-stat-label">Orders Processed</div></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-dashboard">
+        <img src="assets/images/trading-dashboard.png" alt="qTrader OMS Dashboard" loading="eager">
+      </div>
+      <div class="hero-float-card hero-float-card-1">
+        <div class="float-card-label">Daily Volume</div>
+        <div class="float-card-value">৳2.4B+</div>
+        <div class="float-card-chart" id="miniChart"></div>
+      </div>
+      <div class="hero-float-card hero-float-card-2">
+        <div class="float-card-label">Latency</div>
+        <div class="float-card-value" style="color: var(--color-accent-cyan);">&lt;5ms</div>
+        <div style="font-size:var(--text-xs);color:var(--color-text-tertiary);margin-top:4px;">End-to-end</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="trust-bar animate-in">
+  <div class="container">
+    <div class="trust-bar-label">Trusted by leading financial institutions</div>
+    <div class="trust-logos">
+      <div class="trust-logo">UFTCL</div>
+      <div class="trust-logo">PBSL</div>
+      <div class="trust-logo">Royal Capital</div>
+      <div class="trust-logo">Smart Share</div>
+      <div class="trust-logo">Island Securities</div>
+      <div class="trust-logo">NRBC Bank</div>
+      <div class="trust-logo">SBAC Bank</div>
+      <div class="trust-logo">IIDFC Securities</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section section-lg bg-grid" id="products">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="badge"><span class="badge-dot"></span> Product Ecosystem</span>
+      <h2>One Platform. <span class="text-gradient">Complete Control.</span></h2>
+      <p>An integrated suite of financial technology solutions designed for modern capital markets operations.</p>
+    </div>
+    <div class="products-grid">
+      <div class="glass-card product-card animate-in">
+        <div class="product-card-icon">📊</div>
+        <h3>qTrader OMS</h3>
+        <p>Institutional-grade Order Management System with real-time execution, FIX protocol integration, and advanced order routing.</p>
+        <a href="#" class="product-card-link">Learn more →</a>
+      </div>
+      <div class="glass-card product-card animate-in">
+        <div class="product-card-icon">🔄</div>
+        <h3>OCS Trading Platform</h3>
+        <p>OEMF-compliant trading platform for seamless multi-exchange connectivity and automated trade execution.</p>
+        <a href="#" class="product-card-link">Learn more →</a>
+      </div>
+      <div class="glass-card product-card animate-in">
+        <div class="product-card-icon">👥</div>
+        <h3>qWeb CRM</h3>
+        <p>Purpose-built CRM for brokerages — client onboarding, portfolio management, and relationship tracking.</p>
+        <a href="#" class="product-card-link">Learn more →</a>
+      </div>
+      <div class="glass-card product-card animate-in">
+        <div class="product-card-icon">🏢</div>
+        <h3>qOffice Back Office</h3>
+        <p>End-to-end back-office automation — settlement, reconciliation, compliance reporting, and accounting.</p>
+        <a href="#" class="product-card-link">Learn more →</a>
+      </div>
+      <div class="glass-card product-card animate-in">
+        <div class="product-card-icon">🛡️</div>
+        <h3>qRMS</h3>
+        <p>Real-time risk management with exposure monitoring, margin calculations, and automated limit enforcement.</p>
+        <a href="#" class="product-card-link">Learn more →</a>
+      </div>
+      <div class="glass-card product-card animate-in">
+        <div class="product-card-icon">👤</div>
+        <h3>qHR</h3>
+        <p>Modern HR management designed for financial firms — payroll, attendance, performance, and compliance.</p>
+        <a href="#" class="product-card-link">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section bg-radial-center" id="features">
+  <div class="container">
+    <div class="features-layout">
+      <div class="features-visual animate-in">
+        <img src="assets/images/product-ecosystem.png" alt="Quant Fintech Product Ecosystem">
+      </div>
+      <div class="features-list">
+        <div class="section-header" style="text-align:left;margin-bottom:var(--space-8);">
+          <span class="badge"><span class="badge-dot"></span> Why Quant Fintech</span>
+          <h2>Built for <span class="text-gradient">Performance</span></h2>
+          <p style="font-size:var(--text-base);">Infrastructure designed to handle the demands of modern capital markets.</p>
+        </div>
+        <div class="feature-item animate-in">
+          <div class="feature-icon">⚡</div>
+          <div><h4>Ultra-Low Latency</h4><p>Sub-5ms order execution with optimized network stack and co-location support.</p></div>
+        </div>
+        <div class="feature-item animate-in">
+          <div class="feature-icon">🔗</div>
+          <div><h4>FIX Protocol Native</h4><p>Certified FIX 4.2/4.4 integration with DSE & CSE exchange gateways.</p></div>
+        </div>
+        <div class="feature-item animate-in">
+          <div class="feature-icon">🔒</div>
+          <div><h4>Enterprise Security</h4><p>SOC 2 compliant infrastructure with end-to-end encryption and audit trails.</p></div>
+        </div>
+        <div class="feature-item animate-in">
+          <div class="feature-icon">☁️</div>
+          <div><h4>Cloud-Native Architecture</h4><p>Horizontally scalable microservices with 99.9% uptime guarantee.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTIONS -->
+<section class="section bg-grid" id="solutions">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="badge"><span class="badge-dot"></span> Solutions</span>
+      <h2>Tailored for <span class="text-gradient">Your Industry</span></h2>
+      <p>Purpose-built solutions for every participant in the financial ecosystem.</p>
+    </div>
+    <div class="solutions-grid">
+      <div class="glass-card solution-card animate-in">
+        <span class="solution-card-emoji">🏛️</span>
+        <h3>For Stockbrokers</h3>
+        <p>Complete trading and operations suite — from order execution to settlement and client management.</p>
+        <div class="solution-tags">
+          <span class="solution-tag">OMS</span>
+          <span class="solution-tag">CRM</span>
+          <span class="solution-tag">Back Office</span>
+          <span class="solution-tag">Risk Mgmt</span>
+        </div>
+      </div>
+      <div class="glass-card solution-card animate-in">
+        <span class="solution-card-emoji">🏦</span>
+        <h3>For Banks & MBs</h3>
+        <p>Institutional-grade platform for merchant banks and bank subsidiaries with advanced compliance tools.</p>
+        <div class="solution-tags">
+          <span class="solution-tag">Trading</span>
+          <span class="solution-tag">Compliance</span>
+          <span class="solution-tag">Reporting</span>
+          <span class="solution-tag">API</span>
+        </div>
+      </div>
+      <div class="glass-card solution-card animate-in">
+        <span class="solution-card-emoji">🌐</span>
+        <h3>For Exchanges</h3>
+        <p>Exchange-grade connectivity, API gateway integration, and FIX/ITCH protocol implementation.</p>
+        <div class="solution-tags">
+          <span class="solution-tag">FIX Gateway</span>
+          <span class="solution-tag">ITCH Feed</span>
+          <span class="solution-tag">API</span>
+          <span class="solution-tag">Matching</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECHNOLOGY -->
+<section class="section bg-radial-top" id="technology">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="badge"><span class="badge-dot"></span> Technology</span>
+      <h2>Powered by <span class="text-gradient">Innovation</span></h2>
+      <p>Modern engineering principles and cutting-edge technologies at every layer.</p>
+    </div>
+    <div class="tech-grid">
+      <div class="glass-card tech-card animate-in">
+        <div class="tech-icon">🤖</div>
+        <h4>AI & Machine Learning</h4>
+        <p>Smart order routing, predictive analytics, and intelligent risk scoring.</p>
+      </div>
+      <div class="glass-card tech-card animate-in">
+        <div class="tech-icon">🔗</div>
+        <h4>FIX Protocol</h4>
+        <p>Certified FIX engine with exchange-grade performance and reliability.</p>
+      </div>
+      <div class="glass-card tech-card animate-in">
+        <div class="tech-icon">☁️</div>
+        <h4>Cloud Native</h4>
+        <p>Kubernetes-orchestrated microservices with auto-scaling and zero-downtime.</p>
+      </div>
+      <div class="glass-card tech-card animate-in">
+        <div class="tech-icon">🔐</div>
+        <h4>DevSecOps</h4>
+        <p>Integrated security pipeline with automated testing and continuous deployment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="section bg-grid" id="case-studies">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="badge"><span class="badge-dot"></span> Success Stories</span>
+      <h2>Proven <span class="text-gradient">Results</span></h2>
+      <p>See how financial institutions are transforming with Quant Fintech.</p>
+    </div>
+    <div class="cases-grid">
+      <div class="glass-card case-card animate-in">
+        <div class="case-card-meta">OMS Implementation</div>
+        <h3>UFTCL Achieves First FIX Certification</h3>
+        <p>United Financial Trading Company became the first brokerage to receive FIX certification from DSE for a locally-built OMS, powered by Quant Fintech.</p>
+        <div class="case-card-stats">
+          <div><div class="case-stat-value">1st</div><div class="case-stat-label">FIX Certified OMS</div></div>
+          <div><div class="case-stat-value">&lt;3ms</div><div class="case-stat-label">Order Latency</div></div>
+        </div>
+      </div>
+      <div class="glass-card case-card animate-in">
+        <div class="case-card-meta">Trading Platform</div>
+        <h3>PBSL Partners for Next-Gen Trading</h3>
+        <p>Prime Bank Securities launched their proprietary OMS platform, delivering a modern trading experience to their institutional and retail clients.</p>
+        <div class="case-card-stats">
+          <div><div class="case-stat-value">100%</div><div class="case-stat-label">Digital Migration</div></div>
+          <div><div class="case-stat-value">3x</div><div class="case-stat-label">Faster Execution</div></div>
+        </div>
+      </div>
+      <div class="glass-card case-card animate-in">
+        <div class="case-card-meta">OMS Launch</div>
+        <h3>Royal Capital Launches 'Tradefast'</h3>
+        <p>Royal Capital Ltd introduced their branded OMS platform 'Tradefast', providing advanced technological solutions to their growing client base.</p>
+        <div class="case-card-stats">
+          <div><div class="case-stat-value">5K+</div><div class="case-stat-label">Active Traders</div></div>
+          <div><div class="case-stat-value">99.9%</div><div class="case-stat-label">Uptime</div></div>
+        </div>
+      </div>
+      <div class="glass-card case-card animate-in">
+        <div class="case-card-meta">Digital Transformation</div>
+        <h3>NRBC Bank Securities Goes Digital</h3>
+        <p>NRBC Bank Securities embarked on a full digital transformation journey with a custom OMS to match global trading standards.</p>
+        <div class="case-card-stats">
+          <div><div class="case-stat-value">40%</div><div class="case-stat-label">Cost Reduction</div></div>
+          <div><div class="case-stat-value">2x</div><div class="case-stat-label">Client Growth</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="demo">
+  <div class="container">
+    <div class="cta-box animate-in">
+      <h2>Ready to Transform Your <span class="text-gradient">Trading Operations?</span></h2>
+      <p>Schedule a personalized demo and see how Quant Fintech can power your next-generation trading infrastructure.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-primary btn-lg">Schedule a Demo <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"/></svg></a>
+        <a href="#contact" class="btn btn-secondary btn-lg">Talk to Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <div class="nav-logo-icon">Q</div>
+          Quant<span>Fintech</span>
+        </a>
+        <p>Technology solutions for the financial markets. Enterprise-grade infrastructure for modern capital markets operations.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="LinkedIn">in</a>
+          <a href="#" class="footer-social" aria-label="Twitter">𝕏</a>
+          <a href="#" class="footer-social" aria-label="Facebook">f</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <a href="#">qTrader OMS</a>
+        <a href="#">OCS Platform</a>
+        <a href="#">qWeb CRM</a>
+        <a href="#">qOffice</a>
+        <a href="#">qRMS</a>
+        <a href="#">qHR</a>
+        <a href="#">Online BO</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Media & News</a>
+        <a href="#">Contact</a>
+        <a href="#">Partners</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="#">PFI Tower (Level-3), 56-57 Dilkusha C/A, Motijheel, Dhaka-1000</a>
+        <a href="mailto:support@quantfintech.ai">support@quantfintech.ai</a>
+        <a href="tel:+8801711229800">(+88) 01711229800</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Quant Fintech Ltd. All rights reserved.</p>
+      <div class="footer-certifications">
+        <span class="footer-cert">FIX Certified</span>
+        <span class="footer-cert">ITCH Certified</span>
+        <span class="footer-cert">DSE Approved</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
